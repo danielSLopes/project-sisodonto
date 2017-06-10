@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>A Clínica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="indexCliente.html" class="w3-bar-item w3-button w3-theme-l1">Inicio</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">A Clínica</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Valores</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novidades</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clientes</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Parceiros</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="consulta.html">Agendar Consultas</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="cancelconsulta.html">Cancelar consultas</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="receitas.html">Consultar receitas e laudos</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Estrutura da Clínica Odontológica SisOdonto</h1>
+                <p>A Clínica Odontológica SisOdonto possui uma estrutura voltada para o conforto e comodidade de seus pacientes. Desde a recepção até as salas de atendimento, tudo é pensado para que você se sinta bem na Clínica Odontológica SisOdonto .</p>
+                <h4>Recepção</h4>
+                <p>Na nossa recepção, um ambiente moderno e descontraído, atendentes bilíngües personalizam o atendimento a turistas e pacientes da comunidade estrangeira.</p>
+                <p>Para o seu conforto e comodidade, oferecemos revistas atualizadas, ambiente WiFi, café expresso e água gelada. A eventual espera vira uma oportunidade de lazer para as crianças e jovens que contam com brinquedos e videogames para se distrair.</p>
+                <p>No nosso toilete, adaptado para pacientes com necessidades especiais, disponibilizamos pasta de dentes e fio dental. Caso você precise de uma escova de dente, solicite-a na recepção.</p>
+                <h4>Pacientes especiais</h4>
+                <p>A Clínica Odontológica Multi Oral não só planejou sua área física para receber os pacientes com dificuldades de locomoção como também preparou condutas de segurança para viabilizar a saúde oral dos portadores de patologias delicadas.</p>
+                <h4>Salas de atendimento clínico</h4>
+                <p>Todas as nossas salas, além de claras e confortávei s, são equipadas com modernos equipamentos odontológicos. Para tornar a consulta ainda mais confortável, você conta com esteira de massagem na própria cadeira de dentista, música ambiente
+                    e uma novidade para alguns tratamentos, óculos virtuais com som estéreo para reprodução de DVD.</p>
+                <h4>Sala de Repouso</h4>
+                <p>É um ambiente reservado para pacientes em cirurgia. Lá, você desfruta de todo o conforto do Day Clinic. E quem acompanha um paciente em cirurgia, pode aproveitar de todo conforto da nossa recepção ou a privacidade da sala de repouso.</p>
+                <p>Para cada procedimento, protocolos rígidos de esterilização e descontaminação são postos em prática tanto na central de esterilização, quanto no preparo das salas de atendimento. Isso resulta em um ambiente seguro a todos.</p>
+                <h4>Escovódromo</h4>
+                <p>Espaço reservado para que a garotada possa ser orientada nas técnicas de higiene oral para o seu dia-a-dia. Cada criança tem a sua escova que é guardada Clínica Odontológica Multi Oral , de forma higiênica e identificada. Antes do atendimento,
+                    elas escovam os dentes, acompanhadas pela odontopediatra.</p>
+                <h4>Sala para atendimento de RPG e outros profissionais que interagem com a odontologia.</h4>
+                <p>Na Clínica Odontológica Multi Oral, crianças, jovens e adultos – independentemente de estarem passando ou não por tratamento dentário – podem contar com atendimento fonoaudiológico ou de RPG personalizado.</p>
+                <h4>Administração</h4>
+                <p>Para a eficiência do funcionamento da clinica e suporte aos clientes, contamos com uma profissional da área de administração.</p>
+
+            </div>
+            <div class="w3-third w3-container">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+                <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+            </div>
+        </div>
+
+        <footer id="myFooter">
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+                <h4>Footer</h4>
+            </div>
+
+            <div class="w3-container w3-theme-l1">
+                <p>© Copyright 2017. Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

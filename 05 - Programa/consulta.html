@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>SisOdonto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="indexCliente.html" class="w3-bar-item w3-button w3-theme-l1">Inicio</a>
+            <a href="aclinica.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">A Clínica</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Valores</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novidades</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clientes</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Parceiros</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#">Agendar Consultas</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="cancelconsulta.html">Cancelar consultas</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="receitas.html">Consultar receitas e laudos</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Consulta de Revisão dos Dentes</h1>
+                <p>Você certamente já ouviu a frase “Prevenir é melhor que remediar” inúmeras vezes. Quando se trata de garantir a saúde dos seus dentes e do seu sorriso, prevenção é a palavra-chave.</p>
+                <p>Embora exista uma conscientização maior da população em relação à saúde oral, infelizmente ainda existe a idéia de ir ao dentista apenas quando há dor. Isto se deve ao fato de que a visita ao dentista ainda tem uma certa conotação negativa.
+                    O desconforto sentido na cadeira do dentista está associado a uma situação dolorosa. No entanto, esta situação é provocada pela ausência de um acompanhamento odontológico regular.</p>
+                <p>Para manter a saúde bucal é necessário ter uma boa higiene oral, uma dieta equilibrada, além de fazer visitas regulares ao dentista. A periodicidade média ideal é de seis meses.</p>
+                <p>As consultas de check-up na SisOdonto incluem:</p>
+                <ul>
+                    <li>avaliação dos dentes e tecidos de suporte (gengiva e osso)</li>
+                    <li>exames de câncer bucal</li>
+                    <li>avaliação da articulação temporo mandibular ( ATM) e da mordida (oclusão)</li>
+                    <li>radiografias</li>
+                    <li>limpeza para remoção da placa bacteriana</li>
+                    <li>revisão da higiene bucal e hábitos alimentares do paciente, além de recomendações necessárias</li>
+                </ul>
+                <p>A SisOdonto possui uma estrutura totalmente voltada para o seu conforto e comodidade. As nossas salas de atendimento são equipadas com modernos equipamentos odontológicos. Para tornar a sua consulta ainda mais confortável oferecemos esteira
+                    de massagem na própria cadeira de dentista, música ambiente e, dependendo do tratamento, óculos virtuais com som estéreo para reprodução de DVD’s.</p>
+                <p>Assegure a saúde dos seus dentes e marque a sua consulta de revisão!</p>
+                <h2>Preencha os dados para solicitar consulta:</h2>
+                <div class="form-consulta">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <fieldset class="grupo">
+                                <div class="campo">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" name="nome" style="width: 10em" value="" />
+                                </div>
+                                <div class="campo">
+                                    <label for="snome">Sobrenome</label>
+                                    <input type="text" id="snome" name="snome" style="width: 10em" value="" />
+                                </div>
+                            </fieldset>
+                            <div class="campo">
+                                <label>Sexo</label>
+                                <label>
+                <input type="radio" name="sexo" value="masculino"> Masculino
+            </label>
+                                <label>
+                <input type="radio" name="sexo" value="feminino"> Feminino
+            </label>
+                            </div>
+                            <div class="campo">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" name="email" style="width: 20em" value="" />
+                            </div>
+                            <div class="campo">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" id="telefone" name="telefone" style="width: 10em" value="" />
+                            </div>
+
+                            <div class="campo">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+                            </div>
+
+                            <div class="campo">
+                                <label>Newsletter</label>
+                                <label>
+                   <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da empresa
+                 </label>
+                            </div>
+
+                            <button type="submit" name="submit">Enviar</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+                <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+            </div>
+        </div>
+
+        <footer id="myFooter">
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+                <h4>Footer</h4>
+            </div>
+
+            <div class="w3-container w3-theme-l1">
+                <p>© Copyright 2017. Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
