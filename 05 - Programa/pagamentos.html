@@ -32,7 +32,7 @@
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novidades</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clientes</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Parceiros</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Secretária</a>
         </div>
     </div>
 
@@ -43,8 +43,10 @@
         </a>
         <h4 class="w3-bar-item"><b>Menu</b></h4>
         <a class="w3-bar-item w3-button w3-hover-black" href="consulta.html">Agendar Consultas</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">Cancelar consultas</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="cancelconsulta.html">Cancelar consultas</a>
         <a class="w3-bar-item w3-button w3-hover-black" href="receitas.html">Consultar receitas e laudos</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="pagamentos.html">Efetuar pagamentos</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="relatorio.html">Relatório financeito e de pacientes</a>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -55,21 +57,49 @@
 
         <div class="w3-row w3-padding-64">
             <div class="w3-twothird w3-container">
-                <h1 class="w3-text-teal">Suas consultas:</h1>
-                <h4>(Não há consultas marcadas)</h4>
-                <ul>
-                    <li><input type="text"></li>
-                    <li><input type="text"></li>
-                    <li><input type="text"></li>
-                    <li><input type="text"></li>
-                </ul>
-                <h4>Para cancelar uma consulta, entre em contato através do numero:</h4>
-                <p>Contato : +55 (35) 90000-0000</p>
-                <h4>Ou envie um E-mail para:</h4>
-                <p>sisodonto@gmail.com</p>
+                <form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
 
+                    <!-- Campos obrigatórios -->
+                    <input name="receiverEmail" type="hidden" value="suporte@lojamodelo.com.br">
+                    <input name="currency" type="hidden" value="BRL">
+
+                    <!-- Itens do pagamento (ao menos um item é obrigatório) -->
+                    <input name="itemId1" type="hidden" value="0001">
+                    <input name="itemDescription1" type="hidden" value="Notebook Prata">
+                    <input name="itemAmount1" type="hidden" value="24300.00">
+                    <input name="itemQuantity1" type="hidden" value="1">
+                    <input name="itemWeight1" type="hidden" value="1000">
+                    <input name="itemId2" type="hidden" value="0002">
+                    <input name="itemDescription2" type="hidden" value="Notebook Rosa">
+                    <input name="itemAmount2" type="hidden" value="25600.00">
+                    <input name="itemQuantity2" type="hidden" value="2">
+                    <input name="itemWeight2" type="hidden" value="750">
+
+                    <!-- Código de referência do pagamento no seu sistema (opcional) -->
+                    <input name="reference" type="hidden" value="REF1234">
+
+                    <!-- Informações de frete (opcionais) -->
+                    <input name="shippingType" type="hidden" value="1">
+                    <input name="shippingAddressPostalCode" type="hidden" value="01452002">
+                    <input name="shippingAddressStreet" type="hidden" value="Av. Brig. Faria Lima">
+                    <input name="shippingAddressNumber" type="hidden" value="1384">
+                    <input name="shippingAddressComplement" type="hidden" value="5o andar">
+                    <input name="shippingAddressDistrict" type="hidden" value="Jardim Paulistano">
+                    <input name="shippingAddressCity" type="hidden" value="Sao Paulo">
+                    <input name="shippingAddressState" type="hidden" value="SP">
+                    <input name="shippingAddressCountry" type="hidden" value="BRA">
+
+                    <!-- Dados do comprador (opcionais) -->
+                    <input name="senderName" type="hidden" value="José Comprador">
+                    <input name="senderAreaCode" type="hidden" value="11">
+                    <input name="senderPhone" type="hidden" value="56273440">
+                    <input name="senderEmail" type="hidden" value="comprador@uol.com.br">
+
+                    <!-- submit do form (obrigatório) -->
+                    <input alt="Pague com PagSeguro" name="submit" type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif" />
+
+                </form>
             </div>
-
             <div class="w3-third w3-container">
                 <img src="images/dentes1.png" alt="Dentes Brancos">
                 <img src="images/dentes2.jpg" alt="Dentista">
@@ -78,7 +108,7 @@
 
         <footer id="myFooter">
             <div class="w3-container w3-theme-l2 w3-padding-32">
-                <p>Contato : +55 (35) 90000-0000</p>
+                <h4>Contato : +55 (35) 90000-0000</h4>
             </div>
 
             <div class="w3-container w3-theme-l1">

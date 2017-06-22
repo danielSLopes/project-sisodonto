@@ -424,13 +424,14 @@ input[type="submit"]:hover {
 
 .contact-form1 {
     padding: 60px 40px;
-    background: black;
+    background: darkgray;
 }
 
 #small-dialog,
 #small-dialog1,
 #small-dialog2 {
     max-width: 555px;
+    background-color: darkgray;
 }
 
 label.checkbox {
@@ -440,7 +441,7 @@ label.checkbox {
 }
 
 label {
-    color: #000;
+    color: darkgray;
     font-size: 15px;
 }
 
