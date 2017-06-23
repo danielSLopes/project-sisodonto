@@ -4,6 +4,7 @@ function start() {
     var buttonAdd = document.getElementById('adicionar');
     buttonAdd.onclick = function() {
         addNewValue();
+          
     }
 }
 
@@ -21,4 +22,11 @@ function addNewValue() {
         item.appendChild(texto);
 
     }
+
+    var i = 0;
+    i = (i++);
+    localStorage.setItem("PRODUTO "+i,inputProduto.value);
+    localStorage.setItem("QUANTIDADE "+i,inputQuantidade.value);
+
+  
 }
