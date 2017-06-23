@@ -1,10 +1,11 @@
 start();
-
+var i = 0;
 function start() {
     var buttonAdd = document.getElementById('adicionar');
-    buttonAdd.onclick = function() {
+    
+    buttonAdd.onclick = function() { 
         addNewValue();
-          
+        
     }
 }
 
@@ -23,8 +24,7 @@ function addNewValue() {
 
     }
 
-    var i = 0;
-    i = (i++);
+    i++;
     localStorage.setItem("PRODUTO "+i,inputProduto.value);
     localStorage.setItem("QUANTIDADE "+i,inputQuantidade.value);
 
